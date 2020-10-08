@@ -1,0 +1,44 @@
+.comm {
+  	width: 600px;
+	  height: 200px;
+}
+
+.field {
+	width: 400px;
+	height: 200px;
+  margin: 0 auto;
+  overflow: hidden;
+	background-image: linear-gradient(blue 50%, green 50%);
+}
+
+.wheel {
+
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: yellow;
+	animation: wheel 3s 1s;	
+	animation-fill-mode: forwards;	
+}
+
+@keyframes wheel {
+	from { transform: translateX(0.0px)		translateY(200.0px) ;}
+	5.5% { transform: translateX(3.0px)		translateY(197.0px) ;}
+	11% { transform: translateX(12.1px)		translateY(187.9px) ;}
+	16.5% { transform: translateX(26.8px)		translateY(173.2px) ;}
+	22% { transform: translateX(46.8px)		translateY(153.2px) ;}
+	27.5% { transform: translateX(71.4px)		translateY(128.6px) ;}
+	33% { transform: translateX(100.0px)	translateY(100.0px) ;}
+	38.5% { transform: translateX(131.6px)	translateY(68.4px) ;}
+	44% { transform: translateX(165.3px)	translateY(34.7px) ;}
+	49.5% { transform: translateX(200.0px)	translateY(0.0px) ;}
+	55% { transform: translateX(234.7px)	translateY(34.7px) ;}
+	60.5% { transform: translateX(268.4px)	translateY(68.4px) ;}
+	66% { transform: translateX(300.0px)	translateY(100.0px) ;}
+	71.5% { transform: translateX(328.6px)	translateY(128.6px) ;}
+	77% { transform: translateX(353.2px)	translateY(153.2px) ;}
+	82.5% { transform: translateX(373.2px)	translateY(173.2px) ;}
+	88% { transform: translateX(387.9px)	translateY(187.9px) ;}
+	93.5% { transform: translateX(397.0px)	translateY(197.0px) ;}
+	to { transform: translateX(400.0px)	translateY(200.0px) ;}
+}
